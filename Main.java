@@ -7,6 +7,7 @@ public class Main {
         String input;
         Scanner scanner = new Scanner(System.in);
         do {
+            
             System.out.println("Type in your first number: ");
             double number1 = scanner.nextDouble();
             System.out.println("Type in your second number: ");
@@ -32,8 +33,11 @@ public class Main {
                 }
                 default -> System.out.println("That's not a operation!:");
             }
+
             System.out.println("\nDo you want another calculation? Y/N");
             input = scanner.next().toUpperCase();
         }while(input.equals("Y"));
+
+
     }
 }
